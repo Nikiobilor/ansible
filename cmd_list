@@ -1,0 +1,154 @@
+    1  ssh -i 192.168.1.188
+    2  ssh 192.168.1.188
+    3  ssh 192.168.1.187
+    4  ssh 192.168.1.184
+    5  logout
+    6  ssh 192.168.1.184
+    7  ls -la .ssh
+    8  ssh-keygen -t ed25519 -C "ansible"
+    9  ssh-copy-id ~/.ssh/id_ed25519.pub 192.168.1.184
+   10  ssh-copy-id -i ~/.ssh/id_ed25519.pub 192.168.1.184
+   11  ssh-copy-id -i ~/.ssh/id_ed25519.pub 192.168.1.187
+   12  ssh-copy-id -i ~/.ssh/id_ed25519.pub 192.168.1.188
+   13  cat . ssh/authorized_keys
+   14  cat .ssh/id_ed25519
+   15  cat .ssh/
+   16  ls .ssh/
+   17  cat known_hosts
+   18  ls -l .ssh/
+   19  cat .ssh/known_hosts 
+   20  ssh -i ~/.ssh/id_ed25519.pub 192.168.1.188
+   21  sudo yum install git
+   22  ll
+   23  cat .ssh/
+   24  ls .ssh
+   25  cat .ssh/id_ed25519.pub 
+   26  yum install epel-release
+   27  yum install ansible
+   28  ansible --version
+   29  git clone git@github.com:Nikiobilor/ansible.git
+   30  ll
+   31  cd ansible/
+   32  ll
+   33  echo 'This is ansible' > class
+   34  git status
+   35  git add
+   36  git add class
+   37  git status
+   38  git commit
+   39  git commit class 
+   40  git commit -a
+   41  git push
+   42  git status
+   43  ip a
+   44  ll
+   45  cd ansible/
+   46  ll
+   47  which git
+   48  cd
+   49  cat .ssh/
+   50  cd .ssh/
+   51  ll
+   52  cat id_ed25519.pub 
+   53  cd
+   54  ls
+   55  cd ansible/
+   56  ll
+   57  git config --global user.name "Nkiru Obilor"
+   58  git config --global user.email "nkiobilor@gmail.com"
+   59  cat ~/.gitconfig 
+   60  vi ~/.gitconfig 
+   61  cat ~/.gitconfig 
+   62  ls la
+   63  ls -la
+   64  cd .git/
+   65  ll
+   66  git status
+   67  cd
+   68  cd ansible/
+   69  git status
+   70  ansible --version
+   71  ls
+   72  cd ansible/
+   73  ls
+   74  ll
+   75  cd
+   76  cd etc
+   77  cd /etc/
+   78  ll
+   79  cat host
+   80  cat .hosts
+   81  cat sudoers
+   82  cat hosts.conf
+   83  cat host
+   84  cat hosts
+   85  vi hosts
+   86  ping client1
+   87  ping client2
+   88  ping client3
+   89  cd ansible/
+   90  vi inventory
+   91  cat inventory 
+   92  ll
+   93  git status 
+   94  cd git
+   95  cd .git
+   96  cd /git
+   97  cd
+   98  cd git
+   99  cd /git
+  100  ll
+  101  cd ansible/
+  102  ll
+  103  git add inventory
+  104  ll
+  105  git clone git@github.com:Nikiobilor/ansible.git
+  106  git status 
+  107  git add inventory
+  108  cat inventory
+  109  ll
+  110  cd ansible/
+  111  ll
+  112  cd
+  113  cd ansible/
+  114  ll
+  115  cd ansible/
+  116  ll
+  117  cd ..
+  118  vi inventory1
+  119  ll
+  120  git status
+  121  rm-f ansible/
+  122  rm ansible/
+  123  git add inventory1
+  124  git status
+  125  git commit 
+  126  git push
+  127  cat inventory1 
+  128  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  129  ansible all -m ping
+  130  cat /etc/ansible/hosts 
+  131  cp/etc/ansible/hosts /etc/ansible/hosts_bk
+  132  cp /etc/ansible/hosts /etc/ansible/hosts_bk
+  133  ll
+  134  vi /etc/hosts
+  135  cat /etc/ansible/hosts 
+  136  vi /etc/ansible/hosts 
+  137  ping client2
+  138  ansible web -a uptime
+  139  ansible all -a uptime
+  140  vi list_of_servers
+  141  ll
+  142  ssh-copy-id client1
+  143  ssh-copy-id client3
+  144  ansible all -a uptime
+  145  ansible all -a uname
+  146  ansible all -m ping
+  147  ll
+  148  ansible all -m copy -a "src=/home/ansible/inventory1 dest=/home/"
+  149  ansible all -m copy -a "src=/root/ansible/inventory1 dest=/home/"
+  150  ansible all -list-hosts
+  151  ansible all -list -hosts
+  152  ansible all --list-hosts
+  153  history
+  154  history > cmd_list
